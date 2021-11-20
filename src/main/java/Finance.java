@@ -1,5 +1,6 @@
-package com.h2;
-
+import com.h2.BestLoanRates;
+import com.h2.MortgageCalculator;
+import com.h2.SavingsCalculator;
 import java.util.Map;
 import java.util.Arrays;
 
@@ -13,7 +14,7 @@ public class Finance {
         BEST_LOAN_RATES, "usage: bestLoanRates",
         SAVINGS_CALCULATOR, "usage: savingsCalculator <credits separated by ','> <debits separated by ','>",
         MORTGAGE_CALCULATOR, "usage: mortgageCalculator <loanAmount> <termInYears> <annualRate>"
-    )
+    );
 
     private static boolean validateCommandArguments(String[] args){
         switch(args[0]){
