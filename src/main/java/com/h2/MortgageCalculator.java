@@ -15,7 +15,7 @@ public class MortgageCalculator {
         this.annualRate = annualRate;
     }
 
-    private int getNumberOfPayment(){
+    private int getNumberOfPayments(){
         return 12*termInYears;
     }
 
@@ -28,7 +28,7 @@ public class MortgageCalculator {
     public void calculateMonthlyPayment(){
         long p = loanAmount;
         float r = getMonthlyInterestRate();
-        int n = getNumberOfPayment();
+        int n = getNumberOfPayments();
 
         double m = p * (((r * Math.pow(1 + r, n))) / ((Math.pow((1 + r), n)) - 1));
         this.monthlyPayment = m;
