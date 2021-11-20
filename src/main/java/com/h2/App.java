@@ -17,8 +17,8 @@ public class App
 
     private static int add(int[] numbers){
         int sum = 0;
-        for(int i; i<numbers.length; i++){
-            sum += numbers[i];
+        for(int i : numbers){
+            sum += i;
         }
         return sum;
     }
